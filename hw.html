@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HW 2-4</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1>Form-page <a href="index.html">click here</a></h1>
+
+	<h1>The Boolean Attributes list with example</h1>
+	<h3>1) allowfullscreen</h3>
+	<p>allowfullscreen is an HTML attribute, usually used within an iframe HTML tag. It enables videos from various sources to be displayed in fullscreen mode. Without it, videos would only be visible within iframes, and that would be no fun whatsoever.The following HTML code, when inserted into a webpage, displays a YouTube video with a fullscreen button:</p>
+	<br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/UiF0vz2Grq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<h3>2) async</h3>
+	<p>When present, it specifies that the script will be executed asynchronously as soon as it is available.</p>
+	<p>Note: The async attribute is only for external scripts (and should only be used if the src attribute is present).</p>
+	<p id="p1">Hello World!</p>
+	<script src="demo_async.js" async></script>
+
+	<h3>3) autofocus attribute</h3>
+	<p>The autofocus attribute is a boolean attribute.When present, it specifies that the element should automatically get focus when the page loads.</p>
+	<button type="button" autofocus onclick="alert('Hello world!')">Click Me!</button>
+
+	<h3>4) autoplay attribute</h3>
+	<p>The autoplay attribute is a boolean attribute.When present, the audio/video will automatically start playing as soon as it can do so without stopping.</p>
+	
+  	<h3>5) checked attribute</h3>
+  	<p>When present, it specifies that an input element should be pre-selected (checked) when the page loads.<br>
+	The checked attribute can be used with input type="checkbox" and input type="radio".<br>
+	The checked attribute can also be set after the page load, with a JavaScript.</p>
+	<form action="#" method="post">
+	  <input type="checkbox" name="vehicle1" value="Bike">
+	  <label for="vehicle1"> I have a bike</label><br>
+	  <input type="checkbox" name="vehicle2" value="Car">
+	  <label for="vehicle2"> I have a car</label><br>
+	  <input type="checkbox" name="vehicle3" value="Boat" checked>
+	  <label for="vehicle3"> I have a boat</label><br><br>
+	  <input type="submit" value="Submit">
+	</form>
+
+
+	<h3>6) controls Attribute</h3>
+	<p>The controls attribute is a boolean attribute.<br>When present, it specifies that audio/video controls should be displayed.</p>
+	<audio controls>
+	  <source src="horse.ogg" type="audio/ogg">
+	  <source src="audio/bird.mp3" type="audio/mpeg">
+	</audio>
+
+
+	<h3>7) default Attribute</h3>
+	<p>The default attribute is a boolean attribute.<br>
+	When present, it specifies that the track is to be enabled if the user's preferences do not indicate that another track would be more appropriate.<br>
+	Note: There must not be more than one <track> element with a default attribute per <media> element.</p>
+
+
+	<h3>8) defer Attribute</h3>
+	<p>The defer attribute is a boolean attribute.<br>
+
+	When present, it specifies that the script is executed when the page has finished parsing.<br>
+
+	Note: The defer attribute is only for external scripts (should only be used if the src attribute is present).<br>
+
+	Note: There are several ways an external script can be executed:<br>
+
+	If async is present: The script is executed asynchronously with the rest of the page (the script will be executed while the page continues the parsing)<br>
+	If async is not present and defer is present: The script is executed when the page has finished parsing
+	If neither async or defer is present: The script is fetched and executed immediately, before the browser continues parsing the page</p>
+
+
+	<h3>9) disabled Attribute</h3>
+	<p>The disabled attribute is a boolean attribute.<br>
+	When present, it specifies that the element should be disabled.</p>
+	<button type="button" disabled>Click Me!</button>
+
+	<h3>10) formnovalidate Attribute</h3>
+	<p>The formnovalidate attribute is a boolean attribute.<br>
+	When present, it specifies that the input element should not be validated when submitted.<br>
+	The formnovalidate attribute overrides the novalidate attribute of the form element.<br>
+	Note: The formnovalidate attribute can be used with type="submit".</p>
+	<form action="#">
+	  <label for="email">Enter your email:</label>
+	  <input type="email" id="email" name="email"><br><br>
+	  <input type="submit" value="Submit">
+	  <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+	</form>
+
+	<h3>11) ismap Attribute</h3>
+	<p>The ismap attribute is a boolean attribute.<br>
+	When present, it specifies that the image is part of a server-side image map (an image map is an image with clickable areas).<br>
+	When clicking on a server-side image map, the click coordinates are sent to the server as a URL query string.<br>
+	Note: The ismap attribute is allowed only if the <img> element is a descendant of an <a> element with a valid href attribute.</p>
+	<a href="#">
+	  <img src="images/shikhbesobai.jpg" alt="shikhbeshobai.com" width="100" height="132" ismap>
+	</a>
+
+	<h3>12) loop Attribute</h3>
+	<p>The loop attribute is a boolean attribute.<br>
+	When present, it specifies that the audio will start over again, every time it is finished.</p>
+	<audio controls loop>
+	  <source src="audio/bird.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+
+	<h3>13) multiple Attribute</h3>
+	<p>The multiple attribute is a boolean attribute.<br>
+	When present, it specifies that the user is allowed to enter/select more than one value.</p>
+	<form action="#">
+	  <label for="files">Select files:</label>
+	  <input type="file" id="files" name="files" multiple><br><br>
+	  <input type="submit">
+	</form>
+	<br>
+	<form action="#">
+	  <label for="cars">Choose a car:</label>
+	  <select name="cars" id="cars" multiple>
+	    <option value="volvo">Volvo</option>
+	    <option value="saab">Saab</option>
+	    <option value="opel">Opel</option>
+	    <option value="audi">Audi</option>
+	  </select>
+	  <br><br>
+	  <input type="submit" value="Submit">
+	</form>
+
+	<h3>14) muted Attribute</h3>
+	<p>The muted attribute is a boolean attribute.<br>
+	When present, it specifies that the audio output of the video should be muted.</p>
+
+	<video width="320" height="240" controls muted>
+	  <source src="video/animale.mp4" type="video/mp4">
+	  Your browser does not support the video tag.
+	</video>
+
+	<h3>15) novalidate Attribute</h3>
+	<p>The novalidate attribute is a boolean attribute.<br>
+	When present, it specifies that the form-data (input) should not be validated when submitted.</p>
+	<form action="#" novalidate>
+	  <label for="email">Enter your email:</label>
+	  <input type="email" id="email" name="email"><br><br>
+	  <input type="submit">
+	</form>
+
+	<h3>16) novalidate Attribute</h3>
+	<p>The open attribute is a boolean attribute.<br>
+	When present, it specifies that the details should be visible (open) by default.</p>
+	<details open>
+	  <summary>Epcot Center</summary>
+	  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+	</details>
+
+	<h3>17) readonly Attribute</h3>
+	<p>The readonly attribute is a boolean attribute.<br>
+	When present, it specifies that an input field is read-only.</p>
+	<form action="#">
+	  <label for="country">Country:</label>  
+	  <input type="text" id="country" name="country" value="Norway" readonly><br><br>
+	</form>
+
+	<h3>18) required Attribute</h3>
+	<p>The required attribute is a boolean attribute.<br>
+	When present, it specifies that an input field must be filled out before submitting the form.</p>
+	<form action="#">
+	  <label for="username">Username:</label>
+	  <input type="text" id="username" name="username" required>
+	  <input type="submit">
+	</form>
+
+	<h3>19) reversed Attribute</h3>
+	<p>The reversed attribute is a boolean attribute.<br>
+	When present, it specifies that the list order should be descending (9,8,7...), instead of ascending (1, 2, 3...).</p>
+	<ol reversed>
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+	</ol>
+
+	<h3>20) selected Attribute</h3>
+	<p>The selected attribute is a boolean attribute.<br>
+	When present, it specifies that an option should be pre-selected when the page loads.<br>
+	The pre-selected option will be displayed first in the drop-down list.<br>
+	Tip: The selected attribute can also be set after the page loads, with a JavaScript.</p>
+	<label for="cars">Choose a car:</label>
+
+	<select id="cars">
+	  <option value="volvo">Volvo</option>
+	  <option value="saab">Saab</option>
+	  <option value="vw">VW</option>
+	  <option value="audi" selected>Audi</option>
+	</select>
+
+
+	<h1>HOME WORK 02</h1>
+	<h3>1) Block Elements</h3>
+	<p>A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.<br>
+	A block-level element always takes up the full width available (stretches out to the left and right as far as it can).</p>
+	<p style="border: 1px solid red">Hello World</p>
+	<div style="border: 1px solid green">Hello World</div>
+	<h2 style="background-color: seagreen;">h1-h6 are block elements</h2>
+
+	<h3>2) Inline Elements</h3>
+	<p>An inline element does not start on a new line.<br>
+	An inline element only takes up as much width as necessary.</p>
+	<p>This is an inline span <span style="background-color: yellow;">Hello World</span> element inside a paragraph.</p>
+
+	<h3>3) inline-block</h3>
+	<p>Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.<br>
+	Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.</p>
+	<h3>display: inline</h3>
+	<h2 style="display: inline; background-color: lightblue;">Hello</h2>
+	<h2 style="display: inline; background-color: lightgreen;">Hi</h2>
+
+	<h3>display: inline-block</h3>
+	<div style="background-color: red"><h2 style="display: inline-block; background-color: lightblue;">Hello</h2>
+	<h2 style="display: inline-block; background-color: lightgreen;">Hi</h2></div>
+
+	<h3>display: block</h3>
+	<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span style="display: block; background-color: gray; width: 100px;
+  	height: 100px;">Aliquam</span> <span style="display: block; background-color: lightgrey; width: 100px;
+  	height: 100px;">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+
+ 	<h1>HOME WORK 03</h1>
+ 	<h3>5 block using float</h3>
+ 	<div style="width: 20%; height: 200px; background-color: blue; float: left;"></div>
+ 	<div style="width: 20%; height: 200px; background-color: green; float: left;"></div>
+ 	<div style="width: 20%; height: 200px; background-color: gray; float: left;"></div>
+ 	<div style="width: 20%; height: 200px; background-color: seagreen; float: left;"></div>
+ 	<div style="width: 20%; height: 200px; background-color: skyblue; float: left;"></div>
+</body>
+</html>

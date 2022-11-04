@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>assignment03</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1>Home work(02-04) <a href="hw.html">click here</a></h1>
+
+	<h1>This Form page</h1>
+	<h2>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</h2>
+	<h2># The form Element</h2>
+	<p>The HTML form element is used to create an HTML form for user input:</p>
+	<p>The form element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p>
+
+	<h1># The input Element</h1>
+	<p>The HTML input element is the most used form element.<br>
+	An input element can be displayed in many ways, depending on the type attribute.</p>
+
+	<h2># Input Type Text</h2>
+	<p>input type="text" defines a single-line text input field</p>
+	<form>
+	  <label for="fname">First name:</label><br>
+	  <input type="text" id="fname" name="fname">
+	</form>
+
+	<h2># Input Type Password</h2>
+	<p>input type="password" defines a password field</p>
+	<form>
+	  <label for="pwd">Password:</label><br>
+	  <input type="password" id="pwd" name="pwd">
+	</form>
+
+	<h2># Input Type Submit</h2>
+	<p>input type="submit" defines a button for submitting form data to a form-handler</p>
+	<p>The form-handler is typically a server page with a script for processing input data.<br>
+	The form-handler is specified in the form's action attribute</p>
+	<form action="#">
+	  <label for="lname">Last name:</label><br>
+	  <input type="text" id="lname" name="lname" value="Name"><br><br>
+	  <input type="submit" value="Submit">
+	</form>
+
+	<h2># Input Type Reset</h2>
+	<p>input type="reset" defines a reset button that will reset all form values to their default values</p>
+	<form action="#">
+	  <label for="fname">First name:</label><br>
+	  <input type="text" id="fname" name="fname"><br>
+	  <label for="lname">Last name:</label><br>
+	  <input type="text" id="lname" name="lname"><br><br>
+	  <input type="submit" value="Submit">
+	  <input type="reset">
+	</form>
+
+	<h2># Input Type Radio</h2>
+	<p>input type="radio" defines a radio button.<br>
+	Radio buttons let a user select ONLY ONE of a limited number of choices</p>
+	<form>
+	  <input type="radio" id="apple" name="fruits" value="apple">
+	  <label for="apple">Apple</label><br>
+	  <input type="radio" id="orange" name="fruits" value="orange">
+	  <label for="orange">Orange</label><br>
+	  <input type="radio" id="banana" name="fruits" value="banana">
+	  <label for="banana">Banana</label>
+	</form>
+
+	<h2># Input Type Checkbox</h2>
+	<p>input type="checkbox" defines a checkbox.<br>
+	Checkboxes let a user select ZERO or MORE options of a limited number of choices.<br>
+	<form>
+	  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+	  <label for="vehicle1"> I have a bike</label><br>
+	  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+	  <label for="vehicle2"> I have a car</label><br>
+	  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+	  <label for="vehicle3"> I have a boat</label>
+	</form>
+
+	<h2># Input Type Button</h2>
+	<p>input type="button" defines a button.</p>
+	<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+
+	<h2># Input Type Color</h2>
+	<p>The input type="color" is used for input fields that should contain a color.<br>
+	Depending on browser support, a color picker can show up in the input field.</p>
+	<form>
+	  <label for="favcolor">Select your favorite color:</label>
+	  <input type="color" id="favcolor" name="favcolor">
+	</form>
+
+	<h2># Input Type Date</h2>
+	<p>The input type="date" is used for input fields that should contain a date.<br>
+	Depending on browser support, a date picker can show up in the input field.</p>
+	<form>
+	  <label for="birthday">Birthday:</label>
+	  <input type="date" id="birthday" name="birthday">
+	</form>
+
+	<h2># Input Type Datetime-local</h2>
+	<p>The input type="datetime-local" specifies a date and time input field, with no time zone.<br>
+	Depending on browser support, a date picker can show up in the input field.</p>
+	<form>
+	  <label for="birthdaytime">Birthday (date and time):</label>
+	  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+	</form>
+
+	<h2># Input Type Email</h2>
+	<p>The input type="email" is used for input fields that should contain an e-mail address.<br>
+	Depending on browser support, the e-mail address can be automatically validated when submitted.<br>
+	Some smartphones recognize the email type, and add ".com" to the keyboard to match email input.</p>
+	<form>
+	  <label for="email">Enter your email:</label>
+	  <input type="email" id="email" name="email">
+	</form>
+
+	<h2># Input Type Image</h2>
+	<p>The input type="image" defines an image as a submit button.<br>
+	The path to the image is specified in the src attribute.</p>
+	<form>
+	<input type="image" src="images/shikhbesobai.jpg" alt="Submit" width="48" height="48">
+	</form>
+
+	<h2># Input Type File</h2>
+	<p>The input type="file" defines a file-select field and a "Browse" button for file uploads.</p>
+	<form>
+	  <label for="myfile">Select a file:</label>
+	  <input type="file" id="myfile" name="myfile">
+	</form>
+
+	<h2># Input Type Hidden</h2>
+	<p>The input type="hidden" defines a hidden input field (not visible to a user).</p>
+	<form>
+	  <label for="fname">First name:</label>
+	  <input type="text" id="fname" name="fname"><br><br>
+	  <label for="custId">hidden field:</label><br><br>
+	  <input type="hidden" id="custId" name="custId" value="3487">
+	  <input type="submit" value="Submit">
+	</form>
+
+	<h2># Input Type Month</h2>
+	<p>The input type="month" allows the user to select a month and year.</p>
+	<form>
+	  <label for="bdaymonth">Birthday (month and year):</label>
+	  <input type="month" id="bdaymonth" name="bdaymonth">
+	</form>
+
+	<h2># Input Type Number</h2>
+	<p>The input type="number" defines a numeric input field.<br>
+	You can also set restrictions on what numbers are accepted.<br>
+	The following example displays a numeric input field, where you can enter a value from 1 to 5:</p>
+	<form>
+	  <label for="quantity">Quantity (between 1 and 5):</label>
+	  <input type="number" id="quantity" name="quantity" min="1" max="5">
+	</form>
+
+	<h2># Input Type Range</h2>
+	<p>The input type="range" defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the min, max, and step attributes:</p><br>
+	<form>
+	  <label for="vol">Volume (between 0 and 50):</label>
+	  <input type="range" id="vol" name="vol" min="0" max="50">
+	</form>
+
+	<h2># Input Type Search</h2>
+	<p>The input type="search" is used for search fields (a search field behaves like a regular text field).</p>
+	<form>
+	  <label for="gsearch">Search Google:</label>
+	  <input type="search" id="gsearch" name="gsearch">
+	</form>
+
+	<h2># Input Type Tel</h2>
+	<p>The input type="tel" is used for input fields that should contain a telephone number.</p>
+	<form>
+	  <label for="phone">Enter your phone number:</label>
+	  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+	</form>
+
+	<h2># Input Type Time</h2>
+	<p>The input type="time" allows the user to select a time (no time zone).<br>
+	Depending on browser support, a time picker can show up in the input field.</p>
+	<form>
+	  <label for="appt">Select a time:</label>
+	  <input type="time" id="appt" name="appt">
+	</form>
+
+	<h2># Input Type Url</h2>
+	<p>The input type="url" is used for input fields that should contain a URL address.</p>
+	<form>
+	  <label for="homepage">Add your homepage:</label>
+	  <input type="url" id="homepage" name="homepage">
+	</form>
+
+	<h2># Input Type Week</h2>
+	<p>The input type="week" allows the user to select a week and year.</p>
+	<form>
+	  <label for="week">Select a week:</label>
+	  <input type="week" id="week" name="week">
+	</form>
+
+	<h1>HTML Form Elements</h1>
+	<h2># input Element</h2>
+	<p>One of the most used form element is the input element.<br>
+	The input element can be displayed in several ways, depending on the type attribute.</p>
+	<label for="fname">First name:</label>
+	<input type="text" id="fname" name="fname">
+
+	<h2># label Element</h2>
+	<p>The <label> element defines a label for several form elements.<br>
+	The label element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.</p>
+
+	<h2># select Element</h2>
+	<p>The select element defines a drop-down list.</p>
+	<label for="cars">Choose a car:</label>
+	<select id="cars" name="cars">
+	  <option value="volvo">Volvo</option>
+	  <option value="saab">Saab</option>
+	  <option value="fiat">Fiat</option>
+	  <option value="audi">Audi</option>
+	</select>
+
+	<h2># option Element</h2>
+	<p>The option elements defines an option that can be selected.<br>
+	By default, the first item in the drop-down list is selected.</p>
+	<form action="/action_page.php">
+	  <label for="cars">Choose a car:</label>
+	  <select id="cars" name="cars">
+	    <option value="volvo">Volvo</option>
+	    <option value="saab">Saab</option>
+	    <option value="fiat" selected>Fiat</option>
+	    <option value="audi">Audi</option>
+	  </select>
+	  <input type="submit">
+	</form>
+
+	<h2># size Element</h2>
+	<p>Use the size attribute to specify the number of visible values.</p>
+	<label for="cars">Choose a car:</label>
+	<select id="cars" name="cars" size="2">
+	  <option value="volvo">Volvo</option>
+	  <option value="saab">Saab</option>
+	  <option value="fiat">Fiat</option>
+	  <option value="audi">Audi</option>
+	</select>
+
+	<h2># multiple Element</h2>
+	<p>Use the multiple attribute to allow the user to select more than one value.</p>
+	<label for="cars">Choose a car:</label>
+	<select id="cars" name="cars" size="4" multiple>
+	  <option value="volvo">Volvo</option>
+	  <option value="saab">Saab</option>
+	  <option value="fiat">Fiat</option>
+	  <option value="audi">Audi</option>
+	</select>
+
+	<h2># textarea Element</h2>
+	<p>The textarea element defines a multi-line input field (a text area)</p>
+	<p>The rows attribute specifies the visible number of lines in a text area.<br>
+	The cols attribute specifies the visible width of a text area.</p>
+	<textarea name="message" rows="10" cols="30">
+	The cat was playing in the garden.
+	</textarea>
+
+	<h2># button Element</h2>
+	<p>The button element defines a clickable button</p>
+	<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+	<h2># fieldset and legend Element</h2>
+	<p>The fieldset element is used to group related data in a form.</p>
+	<p>The legend element defines a caption for the fieldset element.</p>
+	<form action="#">
+	  <fieldset>
+	    <legend>Personalia:</legend>
+	    <label for="fname">First name:</label><br>
+	    <input type="text" id="fname" name="fname" value="John"><br>
+	    <label for="lname">Last name:</label><br>
+	    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+	    <input type="submit" value="Submit">
+	  </fieldset>
+	</form>
+
+
+	<h2># datalist and legend Element</h2>
+	<p>The datalist element specifies a list of pre-defined options for an input element.<br>
+	Users will see a drop-down list of the pre-defined options as they input data.<br>
+	The list attribute of the input element, must refer to the id attribute of the datalist element.</p>
+	<form action="#">
+	  <input list="browsers">
+	  <datalist id="browsers">
+	    <option value="Internet Explorer">
+	    <option value="Firefox">
+	    <option value="Chrome">
+	    <option value="Opera">
+	    <option value="Safari">
+	  </datalist>
+	</form>
+
+
+	<h1>HTML Input Attributes</h1>
+	<h2># The value Attribute</h2>
+	<p>The input value attribute specifies an initial value for an input field.</p>
+	<form>
+	  <label for="fname">First name:</label><br>
+	  <input type="text" id="fname" name="fname" value="Shopon"><br>
+	  <label for="lname">Last name:</label><br>
+	  <input type="text" id="lname" name="lname" value="Mia">
+	</form>
+
+	<h2># The readonly Attribute</h2>
+	<p>The input readonly attribute specifies that an input field is read-only.</p>
+	<form>
+	  <label for="fname">First name:</label><br>
+	  <input type="text" id="fname" name="fname" value="John" readonly><br>
+	  <label for="lname">Last name:</label><br>
+	  <input type="text" id="lname" name="lname" value="Doe">
+	</form>
+
+	<h2># The disabled Attribute</h2>
+	<p>The input disabled attribute specifies that an input field should be disabled.</p>
+	<form>
+	  <label for="fname">First name:</label><br>
+	  <input type="text" id="fname" name="fname" value="John" disabled><br>
+	  <label for="lname">Last name:</label><br>
+	  <input type="text" id="lname" name="lname" value="Doe">
+	</form>
+
+	<h2># The size Attribute</h2>
+	<p>The input size attribute specifies the visible width, in characters, of an input field.<br>
+	The default value for size is 20.<br>
+	Note: The size attribute works with the following input types: text, search, tel, url, email, and password.</p>
+	<form>
+	  <label for="fname">First name:</label><br>
+	  <input type="text" id="fname" name="fname" size="50">
+	</form>
+
+	<h2># The maxlength Attribute</h2>
+	<p>The input maxlength attribute specifies the maximum number of characters allowed in an input field.</p>
+	<form>
+	  <label for="pin">PIN:</label><br>
+	  <input type="text" id="pin" name="pin" maxlength="4" size="4">
+	</form>
+
+	<h2># The min and max Attribute</h2>
+	<p>The input min and max attributes specify the minimum and maximum values for an input field.<br>
+	The min and max attributes work with the following input types: number, range, date, datetime-local, month, time and week.</p>
+	<form>
+	  <label for="datemax">Enter a date before 1980-01-01:</label>
+	  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+	  <label for="datemin">Enter a date after 2000-01-01:</label>
+	  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+	  <label for="quantity">Quantity (between 1 and 5):</label>
+	  <input type="number" id="quantity" name="quantity" min="1" max="5">
+	</form>
+
+	<h2># The multiple Attribute</h2>
+	<p>The input multiple attribute specifies that the user is allowed to enter more than one value in an input field.<br>
+	The multiple attribute works with the following input types: email, and file.</p>
+	<form>
+	  <label for="files">Select files:</label>
+	  <input type="file" id="files" name="files" multiple>
+	</form>
+
+	<h2># The pattern Attribute</h2>
+	<p>The input pattern attribute specifies a regular expression that the input field's value is checked against, when the form is submitted.<br>
+	The pattern attribute works with the following input types: text, date, search, url, tel, email, and password.</p>
+	<form>
+	  <label for="country_code">Country code:</label>
+	  <input type="text" id="country_code" name="country_code"
+	  pattern="[A-Za-z]{3}" title="Three letter country code">
+	</form>
+
+	<h2># The placeholder Attribute</h2>
+	<p>The short hint is displayed in the input field before the user enters a value.</p>
+	<form>
+	  <label for="phone">Enter a phone number:</label>
+	  <input type="tel" id="phone" name="phone"
+	  placeholder="123-45-678"
+	  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+	</form>
+
+	<h2># The required Attribute</h2>
+	<p>The input required attribute specifies that an input field must be filled out before submitting the form.</p>
+	<form>
+	  <label for="username">Username:</label>
+	  <input type="text" id="username" name="username" required>
+	  <input type="submit" id="button" name="button">
+	</form>
+
+	<h2># The step Attribute</h2>
+	<p>The input step attribute specifies the legal number intervals for an input field.</p>
+	<form>
+	  <label for="points">Points:</label>
+	  <input type="number" id="points" name="points" step="2">
+	</form>
+
+	<h2># The autofocus Attribute</h2>
+	<p>The input autofocus attribute specifies that an input field should automatically get focus when the page loads.</p>
+	<form>
+	  <label for="fname">First name:</label><br>
+	  <input type="text" id="fname" name="fname"><br>
+	  <label for="lname">Last name:</label><br>
+	  <input type="text" id="lname" name="lname" autofocus>
+	</form>
+
+	<h2># The height and width Attribute</h2>
+	<p>The input height and width attributes specify the height and width of an input type="image" element.</p>
+	<form>
+	  <input type="image" src="images/shikhbesobai.jpg" alt="Submit" width="100" height="100">
+	</form>
+
+	<h2># The list Attribute</h2>
+	</body>
+</html>
